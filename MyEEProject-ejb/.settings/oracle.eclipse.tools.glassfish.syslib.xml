@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<system-libraries>
+    <library path="C:/java_lib/glassfish4/glassfish/modules/javax.inject.jar" source="C:/Users/grishvv/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b31/javax.inject-2.4.0-b31-sources.jar"/>
+</system-libraries>
