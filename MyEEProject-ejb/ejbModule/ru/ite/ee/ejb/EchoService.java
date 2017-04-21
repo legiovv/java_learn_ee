@@ -1,10 +1,14 @@
 package ru.ite.ee.ejb;
 
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.enterprise.util.TypeLiteral;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -49,6 +53,8 @@ public class EchoService implements IEchoService {
 	public String echo(String msg) {
 		testService.test();
 		System.out.println(rnd);
+		
+		//new TypeLiteral<List<Map<String, Date>>>() {};
 		
 		System.out.println("---->" + testService.getClass().getName());
 		return "re:" + msg;

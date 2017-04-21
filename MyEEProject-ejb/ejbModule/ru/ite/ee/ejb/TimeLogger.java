@@ -21,10 +21,14 @@ public class TimeLogger {
 		Object result = ic.proceed();
 		Method method = ic.getMethod();
 		Object[] args = ic.getParameters();
+		LogTime annotation = method.getAnnotation(LogTime.class);
 		
 		System.out.println("" +ic.getTarget().getClass().getSimpleName() + ""
-				+ " " + method.getName() +
-				(System.nanoTime() - ts) /1000/1000d + "ms"
+				+ " " + method.getName() 
+				+ "() ---> ["
+				+ result
+				+ "] done in " 
+				+ (System.nanoTime() - ts) /1000/1000d + "ms"
 		);
 		
 		return result;
