@@ -21,7 +21,7 @@ public class TimeLogger {
 		Object result = ic.proceed();
 		Method method = ic.getMethod();
 		Object[] args = ic.getParameters();
-		LogTime annotation = method.getAnnotation(LogTime.class);
+		//LogTime annotation = method.getAnnotation(LogTime.class);
 		
 		System.out.println("" +ic.getTarget().getClass().getSimpleName() + ""
 				+ " " + method.getName() 
